@@ -25,7 +25,7 @@ SECRET_KEY = '+sq6pd-a&gmg!388@k-_gazcwjt@d+51hx$yr4_o4eypya56r0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['161.35.1.76']
 
 
 # Application definition
@@ -135,6 +135,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
